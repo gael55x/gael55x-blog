@@ -26,7 +26,7 @@ async function handler(req, res) {
 
     try {
       client = await MongoClient.connect(
-        
+        'mongodb+srv://gailleamolong1:DgnSxfJnX8JVuU8a@gailleblog.3devy9k.mongodb.net/?retryWrites=true&w=majority&appName=GailleBlog'
       );
     } catch (error) {
       res.status(500).json({ message: 'Could not connect to database.' });
